@@ -1,0 +1,29 @@
+{
+  "name": "mycv-backend",
+  "version": "1.0.0",
+  "description": "Backend for MyCV",
+  "main": "server.js",
+  "scripts": {
+    "test": "npx mocha tests/*js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/danielmo20/mycv-backend.git"
+  },
+  "author": "Daniel Moscarella",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/danielmo20/mycv-backend/issues"
+  },
+  "homepage": "https://github.com/danielmo20/mycv-backend#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.0"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^8.1.1",
+    "supertest": "^4.0.2"
+  }
+}
