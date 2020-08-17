@@ -4,7 +4,7 @@
   "description": "Backend for MyCV",
   "main": "server.js",
   "scripts": {
-    "test": "npx mocha tests/*js"
+    "test": "npx mocha --exit tests/*js"
   },
   "repository": {
     "type": "git",

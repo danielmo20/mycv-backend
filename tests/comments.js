@@ -1,8 +1,17 @@
 var server = require('supertest');
 var should = require('chai').should();
-var app = require('../server');
 
 describe("POST Comments", function() {
+	this.timeout(10000);
+	beforeEach( () => {
+      app = require( '../server' );
+   } ),
+
+   afterEach( ( done ) => {
+      delete require.cache[require.resolve( '../server' )]
+      done();
+     
+   } ),
     it("should pass", function(done){
         server(app)
         .post('/api/comments', {
